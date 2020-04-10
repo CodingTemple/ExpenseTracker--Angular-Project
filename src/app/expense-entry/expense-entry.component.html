@@ -1,0 +1,22 @@
+<mat-card>
+    <h2>Please Add Your Expenses Here</h2>
+    <form [formGroup]='expenseForm' (ngSubmit)='onSubmit()'>
+        <mat-form-field>
+            <input type="text" matInput formControlName='firstName' placeholder="First name">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput formControlName = 'lastName' placeholder="Last Name">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput formControlName = 'travelAir' placeholder="travelAir">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput formControlName = 'hotelName' placeholder="Hotel Name">
+        </mat-form-field>
+        <mat-form-field>
+            <input type="text" matInput formControlName = 'totalExpenses' placeholder="totalExpenses">
+        </mat-form-field>
+
+        <button type='submit' mat-stroked-button >Submit Expenses</button>
+    </form>
+</mat-card>
